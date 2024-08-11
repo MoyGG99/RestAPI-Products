@@ -1,0 +1,22 @@
+INSERT INTO fabricante(id, nombre) VALUES(1, 'Asus');
+INSERT INTO fabricante(id, nombre) VALUES(2, 'Xiaomy');
+INSERT INTO fabricante(id, nombre) VALUES(3, 'HP');
+INSERT INTO fabricante(id, nombre) VALUES(4, 'Acer');
+INSERT INTO fabricante(id, nombre) VALUES(5, 'Lenovo');
+INSERT INTO fabricante(id, nombre) VALUES(6, 'Mac');
+INSERT INTO fabricante(id, nombre) VALUES(7, 'Samsung');
+INSERT INTO fabricante(id, nombre) VALUES(8, 'Huawei');
+INSERT INTO fabricante(id, nombre) VALUES(9, 'Sony');
+
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(1, 'Monitor', 16000, 8);
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(2, 'Portatl', 20000, 1);
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(3, 'Celular', 15000, 6);
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(4, 'Memoria Ram', 2000, 3);
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(5, 'Trajeta Grafica', 3500, 9);
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(6, 'Impresora', 8000, 5);
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(7, 'Pc', 16000, 1);
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(8, 'Gabinete', 7900, 7);
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(9, 'Fuente de poder', 5699, 2);
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(10, 'Monitor', 16000, 3);
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(11, 'Celular', 30000, 4);
+INSERT INTO producto(id, nombre, precio, id_fabricante) VALUES(12, 'Monitor', 16700, 6);
