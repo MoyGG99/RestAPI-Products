@@ -14,6 +14,10 @@ Endpoints:
         - Parámetros:
             - minPrice: Precio mínimo del rango
             - maxPrice: Precio máximo del rango
+  - GET /api/product/id-range: Obtener productos dentro de un rango de Ids
+      - Parámetros:
+          - min: Id mínimo del rango
+          - max: Id máximo del rango
 - Makers:
     - GET /api/maker/findAll: Obtener lista de makers
     - GET /api/maker/find/{id}: Obtener maker por ID
