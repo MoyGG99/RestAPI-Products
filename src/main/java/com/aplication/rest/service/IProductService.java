@@ -13,6 +13,8 @@ public interface IProductService {
 
     List<Product> findByPriceInRange(BigDecimal min, BigDecimal max);
 
+    List<Product> finfByIdBetween(Long min, Long max);
+
     void save(Product product);
 
     void deleteById(Long id);

@@ -31,6 +31,11 @@ public class ProductDAOImpl implements IProductDAO {
     }
 
     @Override
+    public List<Product> findByIdBetween(Long min, Long max) {
+        return productRepository.findByIdBetween(min, max);
+    }
+
+    @Override
     public void save(Product product) {
         productRepository.save(product);
     }

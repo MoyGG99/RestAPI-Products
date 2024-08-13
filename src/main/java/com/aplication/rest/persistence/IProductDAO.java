@@ -13,6 +13,8 @@ public interface IProductDAO {
 
     List<Product> findByPriceInRange(BigDecimal min, BigDecimal max);
 
+    List<Product> findByIdBetween(Long min, Long max);
+
     void save(Product product);
 
     void deleteById(Long id);

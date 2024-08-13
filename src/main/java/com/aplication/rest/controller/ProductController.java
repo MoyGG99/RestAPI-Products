@@ -57,8 +57,29 @@ public class ProductController {
     }
 
     @GetMapping("/price-range")
-    public ResponseEntity<List<Product>> findProductsByPriceRange(@RequestParam BigDecimal min, @RequestParam BigDecimal max) {
-        List<Product> products = productService.findByPriceInRange(min, max);
+    public ResponseEntity<?> findProductsByPriceRange(@RequestParam BigDecimal min, @RequestParam BigDecimal max) {
+        List<ProductDTO> products = productService.findByPriceInRange(min, max)
+                .stream()
+                .map(product -> ProductDTO.builder()
+                        .id(product.getId())
+                        .name(product.getName())
+                        .price(product.getPrice())
+                        .maker(product.getMaker())
+                        .build())
+                .toList();
+        return ResponseEntity.ok(products);
+    }
+
+    @GetMapping("/id-range")
+    public ResponseEntity<List<ProductDTO>> findProductsByIdRange(@RequestParam Long min, @RequestParam Long max) {
+        List<ProductDTO> products = productService.finfByIdBetween(min, max).stream()
+                .map(product -> ProductDTO.builder()
+                        .id(product.getId())
+                        .name(product.getName())
+                        .price(product.getPrice())
+                        .maker(product.getMaker())
+                        .build())
+                .toList();
         return ResponseEntity.ok(products);
     }
 

@@ -31,6 +31,11 @@ public class ProductServiceImpl implements IProductService {
     }
 
     @Override
+    public List<Product> finfByIdBetween(Long min, Long max) {
+        return productDAO.findByIdBetween(min, max);
+    }
+
+    @Override
     public void save(Product product) {
         productDAO.save(product);
     }

@@ -19,4 +19,6 @@ public interface ProductRepository extends CrudRepository<Product, Long> {
 
     // es de jpa
     List<Product> findByPriceBetween(BigDecimal min, BigDecimal max);
+
+    List<Product> findByIdBetween(Long min, Long max);
 }
